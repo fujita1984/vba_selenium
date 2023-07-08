@@ -42,7 +42,7 @@ Dim myBy As New Selenium.By
 Dim waitCount
 waitCount = 0
 
-If driver.IsElementPresent(myBy.XPath("xpath")) Then
+Do Until driver.IsElementPresent(myBy.XPath("xpath")) 
     driver.Wait 1000
     waitCount = waitCount + 1
     
@@ -51,7 +51,7 @@ If driver.IsElementPresent(myBy.XPath("xpath")) Then
         Exit Sub
     End If
 
-End If
+Loop
 
 '---------------------------------------------------------------
 '時々エラーになる場合---------------------------------------------
