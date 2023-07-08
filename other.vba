@@ -37,4 +37,5 @@ driver.ExecuteScript "document.getElementById('text').value='入力する文字'
 
 If driver.FindElementById("text").Value <> "入力する文字" Then
     MsgBox "入力に失敗しました"
+    Exit Sub
 End If

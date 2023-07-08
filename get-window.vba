@@ -19,7 +19,7 @@ Dim isFound As Boolean
 isFound = False
 For i = 1 To driver.Windows.Count
 
-    If driver.Url = "https://sekai-kabuka.com/" Then
+    If driver.Url = "https://example.com/" Then
         isFound = True
         Exit For
     End If
