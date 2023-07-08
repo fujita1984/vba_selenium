@@ -42,7 +42,6 @@ Dim myBy As New Selenium.By
 Dim waitCount
 waitCount = 0
 
-Dim myBy As New By
 If driver.IsElementPresent(myBy.XPath("xpath")) Then
     driver.Wait 1000
     waitCount = waitCount + 1
